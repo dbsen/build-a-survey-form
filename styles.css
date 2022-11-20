@@ -1,0 +1,54 @@
+h1 {
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 18;
+
+}
+
+h2{
+  font-family: Tahoma;
+  font-size:14;
+}
+h3{
+  font-size: 12;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+form {
+  width: 60vw;
+  min-width: 400px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size:16;
+}
+
+fieldset {
+    border: none;
+    padding: 2px 0;
+}
+
+label {
+  display: block;
+  margin: 2px 0;
+}
+
+
+input, textarea, select {
+  width: 100%;
+  margin: 2px 0;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  padding: 5px;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 15;
+}

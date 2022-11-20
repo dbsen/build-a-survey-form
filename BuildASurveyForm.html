@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>freeCodeCamp Survey Form</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<form id="survey-form">
+			<fieldset id="mainTitle">
+				<h1 id="title">freeCodeCamp Survey Form</h1>
+				<p id='description'>Thank you for taking the time to help us improve the platform</p>
+			</fieldset>
+			<fieldset> <!-- name age email -->
+				<label for="name" id='name-label'>Name: <input id="name" type="text" placeholder="Enter your name" required/></label>
+				<label for="email" id='email-label'>Email: <input id="email" type="email" required placeholder="Enter your email"/></label>
+				<label for="number" id='number-label'>Age: <input id="number" type="number" min="18" max="120"placeholder="Enter your age"/>age</label>
+			</fieldset>
+			<fieldset> <!-- current role -->
+				<label for="dropdown">Which option best describes your current role?
+					<select id="dropdown">
+						<option value="">Select current role.</option>
+						<option value="1">Student</option>
+						<option value="2">Full time job</option>
+						<option value="3">Full time Learner</option>
+						<option value="4">Prefer not to say</option>
+						<option value="5">Other</option>
+					</select>
+				</label>
+			</fieldset>
+			<fieldset> <!-- recommend to a friend -->
+				<h2 id="recommend-title">Would you recommend freeCodeCamp to a friend?</h2>
+				<label for="definitely"><input id="definitely" type="radio" name="recommended-choice" value="recommended-choice" class="inline" />Definitely</label>
+				<label for="maybe"><input id="maybe" type="radio" name="recommended-choice" value="recommended-choice" class="inline" />Maybe</label>
+				<label for="no"><input id="no" type="radio" name="recommended-choice" value="recommended-choice" class="inline" />No</label>
+				<label for="not sure"><input id="not sure" type="radio" name="recommended-choice" value="recommended-choice" class="inline" />Not sure</label>
+			</fieldset>
+			<fieldset> <!-- favorite feature -->
+				<label for="feature">
+					<select id="feature">
+						<option value="">Select an option</option>
+						<option value="1">Challenges</option>
+						<option value="2">Projects</option>
+						<option value="3">Community</option>
+						<option value="4">Open Source</option>
+					</select>
+				</label>
+			</fieldset>
+			<fieldset> <!-- Improvements multiple choice questionare -->
+				<label>What would you like to see improved? (Check all that apply)
+					<label for="improvments"><input id="improvments" type="checkbox" value="Front-end Projects"/>Front-end Projects</label>
+					<label for="improvments"><input id="improvments" type="checkbox" value="Back-end Projects"/>Back-end Projects</label>
+					<label for="improvments"><input id="improvments" type="checkbox" value="Data Visualization"/>Data Visualization</label>
+					<label for="improvments"><input id="improvments" type="checkbox" value="Challenges"/>Challenges</label>
+					<label for="improvments"><input id="improvments" type="checkbox" value="Open Source Community"/>Open Source Community</label>
+					<label for="improvments"><input id="improvments" type="checkbox" value="Gitter help rooms"/>Gitter help rooms</label>
+					<label for="improvments"><input id="improvments" type="checkbox" value="Videos"/>Videos</label>
+					<label for="improvments"><input id="improvments" type="checkbox" value="City Meetups"/>City Meetups</label>
+					<label for="improvments"><input id="improvments" type="checkbox" value="Wiki"/>Wiki</label>
+					<label for="improvments"><input id="improvments" type="checkbox" value="Additional Courses"/>Additional Courses</label>
+				</label>
+			</fieldset>
+			<fieldset> <!-- additional comments -->
+				<label>
+					Any comments or suggestions?
+					<textarea id="comments" rows="5" cols="40" placeholder="Comments..."></textarea>
+				</label>
+			</fieldset>
+			<fieldset> <!-- submit button -->
+				<input type="submit" value="Submit" id='submit' />
+			</fieldset>
+			</form>
+	</body>
+</html>
